@@ -1,0 +1,37 @@
+Table Nationalität {
+  id serial [primary key]
+  Nationalität_Name Varchar(255) [unique, not null]
+  }
+
+Table Spezialität {
+  id serial [primary key]
+  Spezialität_Name Varchar(255) unique
+  }
+
+  Table Spieler {
+    id serial [primary key]
+    Name varchar(255) [unique, not null]
+    Nationalität_id smallint [note: 'on delete cascade']
+    Spezialität_id smallint [note: 'on delete cascade']
+    Verletzungen real
+    "Gelbe Karten" real
+    Alter smallint [not null]
+    Tage smallint [not null]
+    TSI integer [not null]
+    Gehalt integer [not null]
+    "Wochen im Verein" smallint [not null]
+    Erfahrung smallint [not null]
+    Führungsqualitäten smallint [not null]
+    Form smallint [not null]
+    Kondition smallint [not null]
+    Torwart smallint [not null]
+    Verteidigung smallint [not null]
+    Spielaufbau smallint [not null]
+    Flügelspiel smallint [not null]
+    Passspiel smallint [not null]
+    Torschuss smallint [not null]
+    Standards smallint [not null]
+  }
+
+Ref: Spieler.Nationalität_id > Nationalität.id 
+Ref: Spieler.Spezialität_id > Spezialität.id 
