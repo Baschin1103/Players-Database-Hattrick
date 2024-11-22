@@ -1,3 +1,3 @@
-# Spieler-Datenbank-Hattrick
-In diesem Verzeichnis finden sich alle Dateien und Programme zur Erstellung einer normalisierten und relationalen Datenbank bestehend aus Spielern von hattrick.org.
-Zunächst wird im Python-Programm "Preparing_Database_hattrick" der Datensatz erstellt. Später wird dieser von einem Sql-Skript "Datenbankerstellung" genutzt für die Erstellung der Datenbank. Eine Übersicht des Designs dieser ist in der Datei "Diagramm_DB_Design". 
+# Players-Database-Hattrick
+This directory contains all files and programs for creating a normalized and relational database consisting of players from hattrick.org.
+First, the data set is created in the Python program “Preparing_Database_hattrick”. This is later used by a sql script “Database creation” to create the database. An overview of the design of this is in the file “Diagramm_DB_Design”. 
